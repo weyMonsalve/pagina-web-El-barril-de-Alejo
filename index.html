@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - El barril de Alejo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'roboto', sans-serif;
+            background-color: #2c2c2c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #f3a847;
+        }
+        
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .menu-item {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fondo oscuro para mejor visibilidad */
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .menu-item h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Fondo oscuro para resaltar el texto */
+            padding: 10px;
+            border-radius: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            /* Sombra en el texto para mejor legibilidad */
+            position: relative;
+            z-index: 1;
+        }
+        
+        .menu-item p {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #fff;
+            /* Cambié el color del texto a blanco */
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Fondo más oscuro para las descripciones */
+            padding: 10px;
+            border-radius: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            /* Sombra en el texto para mejorar la legibilidad */
+        }
+        
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #f3a847;
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Fondo oscuro en el precio para mejor visibilidad */
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .ul {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #fff;
+            /* Cambié el color del texto a blanco */
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Fondo más oscuro para las descripciones */
+            padding: 10px;
+            border-radius: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            /* Sombra en el texto para mejorar la legibilidad */
+        }
+        
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        
+        footer p {
+            margin: 0;
+            color: #bbb;
+        }
+        
+        .contact-info {
+            font-size: 1rem;
+            color: #bbb;
+        }
+        
+        .whatsapp-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .whatsapp-button a {
+            text-decoration: none;
+            background-color: #25D366;
+            /* Color característico de WhatsApp */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            /* Bordes redondeados para el botón */
+            font-size: 1.25rem;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .whatsapp-button a:hover {
+            background-color: #128C7E;
+            /* Color más oscuro al pasar el ratón */
+            transform: scale(1.05);
+            /* Efecto de aumento al pasar el ratón */
+        }
+        
+        .whatsapp-button a:active {
+            transform: scale(0.98);
+            /* Efecto de clic (disminuye el tamaño) */
+        }
+        
+        @media (max-width: 768px) {
+            .menu-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>El Barril de Alejo</h1>
+        <p>¡Bienvenidos a nuestro Menú</p>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item" style="background-image: url('https://res.cloudinary.com/drqk6qzo7/image/upload/v1733775971/maxresdefault_aelque.jpg');">
+            <h3>Picada de Chicharrón</h3>
+            <p>Chicharrón al barril, Papa criolla, Arepa, Mazorca, Chimichurri y Guacamole</p>
+            <p class="price">$18,000 (personal)</p>
+            <p class="price">$70,000 (4 Personas)</p>
+        </div>
+
+        <div class="menu-item" style="background-image: url('https://res.cloudinary.com/drqk6qzo7/image/upload/v1733775612/ceviche-de-chicharron_x97tvu.jpg');">
+            <h3>Ceviche de Chicharrón</h3>
+            <p>Chicharrón al Barril, Chips de plátano verde, Guacamole, Pico de gallo</p>
+            <p class="price">$18,000</p>
+        </div>
+
+        <div class="menu-item" style="background-image: url('https://res.cloudinary.com/drqk6qzo7/image/upload/v1733774897/taquitos_risxfi.jpg');">
+            <h3>Taquitos</h3>
+            <p>2 Tacos de harina con Chicharrón al barril, Guacamole, Pico de gallo, Salsa de la caSsa</p>
+            <p class="price">$18,000</p>
+        </div>
+
+        <div class="menu-item" style="background-image: url('https://res.cloudinary.com/drqk6qzo7/image/upload/v1733774897/taquitos_risxfi.jpg');">
+            <h3>Extras</h3>
+            <ul class="ul">
+                <li>Chorizo con yuca y hogao - $12,000</li>
+                <li>Porción de Chicharrón con yuca - $13,000</li>
+                <li>Hamburguesa artesanla - %18,000</li>
+                <li>Hamburguesa artesanal + Chicharrón - $23,000</li>
+            </ul>
+        </div>
+
+        <div class="menu-item" style="background-image: url('https://res.cloudinary.com/drqk6qzo7/image/upload/v1733776199/OIP_jhmceb.jpg');">
+            <h3>Bebidas</h3>
+            <ul class="ul">
+                <li>Gaseosas</li>
+                <li>Cervezas</li>
+                <li>Soda saborizada</li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- Botón de WhatsApp -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="https://wa.me/573113591744" target="_blank" style="text-decoration: none; background-color: #25D366; color: white; padding: 15px 30px; border-radius: 5px; font-size: 1.25rem; display: inline-block; transition: background-color 0.3s ease;">
+                    Contacta por WhatsApp
+        </a>
+    </div>
+
+    <footer>
+
+        <p class="contac-info">Domicilios: 3113591744 | 3226745291</p>
+        <p>&copy; 2024 El Barril de Alejo - Todos los derechos reservados </p>
+    </footer>
+
+</body>
+
+</html>
